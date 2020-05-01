@@ -26,3 +26,14 @@
   });
 
 })(jQuery); // End of use strict
+
+
+
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register("/sw.js").then((e)=>{
+  })
+}
+
+window.addEventListener('beforeinstallprompt',function(event){
+  // event.preventDefault();
+})
