@@ -35,5 +35,5 @@ if('serviceWorker' in navigator){
 }
 
 window.addEventListener('beforeinstallprompt',function(event){
-  // event.preventDefault();
+  event.preventDefault();
 })
