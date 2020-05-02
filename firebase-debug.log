@@ -1,0 +1,290 @@
+[debug] [2020-05-02T14:38:22.999Z] ----------------------------------------------------------------------
+[debug] [2020-05-02T14:38:23.003Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Avinash\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-05-02T14:38:23.003Z] CLI Version:   7.12.1
+[debug] [2020-05-02T14:38:23.003Z] Platform:      win32
+[debug] [2020-05-02T14:38:23.003Z] Node Version:  v10.15.3
+[debug] [2020-05-02T14:38:23.005Z] Time:          Sat May 02 2020 20:08:23 GMT+0530 (India Standard Time)
+[debug] [2020-05-02T14:38:23.005Z] ----------------------------------------------------------------------
+[debug] [2020-05-02T14:38:23.005Z] 
+[debug] [2020-05-02T14:38:23.018Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-02T14:38:23.018Z] > authorizing via signed-in user
+[debug] [2020-05-02T14:38:23.018Z] [iam] checking project avinashvidyarthi for permissions ["firebase.projects.get"]
+[debug] [2020-05-02T14:38:23.021Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/avinashvidyarthi:testIamPermissions  
+
+[debug] [2020-05-02T14:38:25.425Z] <<< HTTP RESPONSE 200
+[debug] [2020-05-02T14:38:25.427Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/avinashvidyarthi  
+ 
+[debug] [2020-05-02T14:38:26.695Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages'...
+[info] 
+[debug] [2020-05-02T14:38:26.702Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/avinashvidyarthi/webApps/-/config  
+ 
+[debug] [2020-05-02T14:38:27.903Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[warn] !  Your requested "node" version "8" doesn't match your global version "10"
+[info] +  functions: Emulator started at http://localhost:5001
+[info] i  functions: Watching "F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions" for Cloud Functions...
+[debug] [2020-05-02T14:38:29.248Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-05-02T14:38:29.248Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-05-02T14:38:29.249Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-05-02T14:38:29.249Z] [worker-~diagnostic~-9379c84c-6fa8-4fbd-adee-109c3de9b98a]: Assigning socketPath: \\?\pipe\F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\18620
+[debug] [2020-05-02T14:38:29.250Z] [worker-~diagnostic~-9379c84c-6fa8-4fbd-adee-109c3de9b98a]: BUSY
+[debug] [2020-05-02T14:38:30.003Z] [runtime-status] [18620] Functions runtime initialized. {"cwd":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions","node_version":"10.15.3"}
+[debug] [2020-05-02T14:38:30.006Z] [runtime-status] [18620] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-05-02T14:38:30.010Z] [runtime-status] [18620] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-05-02T14:38:30.012Z] [runtime-status] [18620] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-05-02T14:38:30.013Z] [runtime-status] [18620] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[info] +  functions[app]: http function initialized (http://localhost:5001/avinashvidyarthi/us-central1/app).
+[debug] [2020-05-02T14:38:30.865Z] [worker-~diagnostic~-9379c84c-6fa8-4fbd-adee-109c3de9b98a]: IDLE
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/avinashvidyarthi/us-central1/app for local Function app
+[debug] [2020-05-02T14:39:11.610Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-02T14:39:11.611Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-02T14:39:11.611Z] Accepted request GET /avinashvidyarthi/us-central1/app/favicon.ico --> app
+[debug] [2020-05-02T14:39:11.618Z] [worker-pool] addWorker(app)
+[debug] [2020-05-02T14:39:11.618Z] [worker-pool] Adding worker with key app, total=1
+[debug] [2020-05-02T14:39:11.618Z] [worker-pool] submitWork(triggerId=app)
+[debug] [2020-05-02T14:39:11.619Z] [worker-app-db69da01-dea8-4808-bed2-9d11b2f7b448]: Assigning socketPath: \\?\pipe\F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\6524
+[debug] [2020-05-02T14:39:11.619Z] [worker-app-db69da01-dea8-4808-bed2-9d11b2f7b448]: BUSY
+[debug] [2020-05-02T14:39:12.376Z] [runtime-status] [6524] Functions runtime initialized. {"cwd":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions","node_version":"10.15.3"}
+[debug] [2020-05-02T14:39:12.379Z] [runtime-status] [6524] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-05-02T14:39:12.384Z] [runtime-status] [6524] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-05-02T14:39:12.386Z] [runtime-status] [6524] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-05-02T14:39:12.387Z] [runtime-status] [6524] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-05-02T14:39:13.179Z] [runtime-status] [6524] Trigger "app" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "app"
+[debug] [2020-05-02T14:39:13.180Z] [runtime-status] [6524] triggerDefinition {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2020-05-02T14:39:13.180Z] [runtime-status] [6524] Running app in mode HTTPS
+[debug] [2020-05-02T14:39:13.187Z] [runtime-status] [6524] Attempting to listen to socketPath: \\?\pipe\F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\6524
+[debug] [2020-05-02T14:39:13.196Z] [functions] Runtime ready! Sending request!
+[debug] [2020-05-02T14:39:13.222Z] [runtime-status] [6524] Ephemeral server handling GET request
+[debug] [2020-05-02T14:39:13.233Z] [runtime-status] [6524] Ephemeral server survived.
+[info] i  functions: Finished "app" in ~1s
+[debug] [2020-05-02T14:39:13.267Z] [worker-app-db69da01-dea8-4808-bed2-9d11b2f7b448]: IDLE
+[debug] [2020-05-02T14:39:13.267Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-02T14:40:26.407Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-02T14:40:26.407Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-02T14:40:26.408Z] Accepted request GET /avinashvidyarthi/us-central1/app --> app
+[debug] [2020-05-02T14:40:26.408Z] [worker-pool] submitWork(triggerId=app)
+[debug] [2020-05-02T14:40:26.408Z] [worker-app-db69da01-dea8-4808-bed2-9d11b2f7b448]: Assigning socketPath: \\?\pipe\F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\6524
+[debug] [2020-05-02T14:40:26.408Z] [worker-app-db69da01-dea8-4808-bed2-9d11b2f7b448]: BUSY
+[debug] [2020-05-02T14:40:26.410Z] [runtime-status] [6524] Trigger "app" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "app"
+[debug] [2020-05-02T14:40:26.412Z] [runtime-status] [6524] triggerDefinition {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2020-05-02T14:40:26.412Z] [runtime-status] [6524] Running app in mode HTTPS
+[debug] [2020-05-02T14:40:26.412Z] [runtime-status] [6524] Attempting to listen to socketPath: \\?\pipe\F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\6524
+[debug] [2020-05-02T14:40:26.414Z] [functions] Runtime ready! Sending request!
+[debug] [2020-05-02T14:40:26.418Z] [runtime-status] [6524] Ephemeral server handling GET request
+[debug] [2020-05-02T14:40:26.420Z] [runtime-status] [6524] Ephemeral server survived.
+[info] i  functions: Finished "app" in ~1s
+[debug] [2020-05-02T14:40:26.431Z] [worker-app-db69da01-dea8-4808-bed2-9d11b2f7b448]: IDLE
+[debug] [2020-05-02T14:40:26.431Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-02T14:44:41.450Z] File F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\index.js changed, reloading triggers
+[debug] [2020-05-02T14:44:41.770Z] File F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\index.js changed, reloading triggers
+[debug] [2020-05-02T14:44:42.012Z] File F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\index.js changed, reloading triggers
+[debug] [2020-05-02T14:44:42.209Z] File F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\index.js changed, reloading triggers
+[debug] [2020-05-02T14:44:42.427Z] File F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\index.js changed, reloading triggers
+[debug] [2020-05-02T14:44:42.621Z] File F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\index.js changed, reloading triggers
+[debug] [2020-05-02T14:44:43.066Z] File F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\index.js changed, reloading triggers
+[debug] [2020-05-02T14:44:43.285Z] File F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\index.js changed, reloading triggers
+[debug] [2020-05-02T14:44:43.478Z] File F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\index.js changed, reloading triggers
+[debug] [2020-05-02T14:44:44.480Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-05-02T14:44:44.480Z] [worker-~diagnostic~-9379c84c-6fa8-4fbd-adee-109c3de9b98a]: FINISHING
+[debug] [2020-05-02T14:44:44.481Z] [worker-pool] Shutting down IDLE worker (app)
+[debug] [2020-05-02T14:44:44.481Z] [worker-app-db69da01-dea8-4808-bed2-9d11b2f7b448]: FINISHING
+[debug] [2020-05-02T14:44:44.489Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-05-02T14:44:44.489Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-05-02T14:44:44.489Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-05-02T14:44:44.489Z] [worker-~diagnostic~-0dd5e941-9eb3-4270-adb1-a59be414bfbd]: Assigning socketPath: \\?\pipe\F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\17992
+[debug] [2020-05-02T14:44:44.489Z] [worker-~diagnostic~-0dd5e941-9eb3-4270-adb1-a59be414bfbd]: BUSY
+[debug] [2020-05-02T14:44:44.498Z] [worker-app-db69da01-dea8-4808-bed2-9d11b2f7b448]: exited
+[debug] [2020-05-02T14:44:44.498Z] [worker-app-db69da01-dea8-4808-bed2-9d11b2f7b448]: FINISHED
+[debug] [2020-05-02T14:44:44.498Z] [worker-~diagnostic~-9379c84c-6fa8-4fbd-adee-109c3de9b98a]: exited
+[debug] [2020-05-02T14:44:44.498Z] [worker-~diagnostic~-9379c84c-6fa8-4fbd-adee-109c3de9b98a]: FINISHED
+[debug] [2020-05-02T14:44:45.328Z] [runtime-status] [17992] Functions runtime initialized. {"cwd":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions","node_version":"10.15.3"}
+[debug] [2020-05-02T14:44:45.330Z] [runtime-status] [17992] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-05-02T14:44:45.335Z] [runtime-status] [17992] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-05-02T14:44:45.337Z] [runtime-status] [17992] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-05-02T14:44:45.338Z] [runtime-status] [17992] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-05-02T14:44:46.129Z] [worker-~diagnostic~-0dd5e941-9eb3-4270-adb1-a59be414bfbd]: IDLE
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/avinashvidyarthi/us-central1/app for local Function app
+[debug] [2020-05-02T14:45:53.412Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-02T14:45:53.412Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-02T14:45:53.413Z] Accepted request GET /avinashvidyarthi/us-central1/app/favicon.ico --> app
+[debug] [2020-05-02T14:45:53.413Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-05-02T14:45:53.413Z] [worker-pool] Cleaned up workers for app: 1 --> 0
+[debug] [2020-05-02T14:45:53.419Z] [worker-pool] addWorker(app)
+[debug] [2020-05-02T14:45:53.419Z] [worker-pool] Adding worker with key app, total=1
+[debug] [2020-05-02T14:45:53.419Z] [worker-pool] submitWork(triggerId=app)
+[debug] [2020-05-02T14:45:53.419Z] [worker-app-385a0baf-7d37-41fe-85ec-66da7f59433a]: Assigning socketPath: \\?\pipe\F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\25092
+[debug] [2020-05-02T14:45:53.419Z] [worker-app-385a0baf-7d37-41fe-85ec-66da7f59433a]: BUSY
+[debug] [2020-05-02T14:45:54.085Z] [runtime-status] [25092] Functions runtime initialized. {"cwd":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions","node_version":"10.15.3"}
+[debug] [2020-05-02T14:45:54.089Z] [runtime-status] [25092] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-05-02T14:45:54.093Z] [runtime-status] [25092] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-05-02T14:45:54.095Z] [runtime-status] [25092] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-05-02T14:45:54.096Z] [runtime-status] [25092] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-05-02T14:45:54.950Z] [runtime-status] [25092] Trigger "app" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "app"
+[debug] [2020-05-02T14:45:54.953Z] [runtime-status] [25092] triggerDefinition {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2020-05-02T14:45:54.953Z] [runtime-status] [25092] Running app in mode HTTPS
+[debug] [2020-05-02T14:45:54.959Z] [runtime-status] [25092] Attempting to listen to socketPath: \\?\pipe\F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\25092
+[debug] [2020-05-02T14:45:54.967Z] [functions] Runtime ready! Sending request!
+[debug] [2020-05-02T14:45:54.995Z] [runtime-status] [25092] Ephemeral server handling GET request
+[debug] [2020-05-02T14:45:55.010Z] [runtime-status] [25092] Ephemeral server survived.
+[info] i  functions: Finished "app" in ~1s
+[debug] [2020-05-02T14:45:55.049Z] [worker-app-385a0baf-7d37-41fe-85ec-66da7f59433a]: IDLE
+[debug] [2020-05-02T14:45:55.049Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-02T14:46:01.916Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-02T14:46:01.916Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-02T14:46:01.916Z] Accepted request POST /avinashvidyarthi/us-central1/app/notify --> app
+[debug] [2020-05-02T14:46:01.916Z] [worker-pool] submitWork(triggerId=app)
+[debug] [2020-05-02T14:46:01.916Z] [worker-app-385a0baf-7d37-41fe-85ec-66da7f59433a]: Assigning socketPath: \\?\pipe\F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\25092
+[debug] [2020-05-02T14:46:01.916Z] [worker-app-385a0baf-7d37-41fe-85ec-66da7f59433a]: BUSY
+[debug] [2020-05-02T14:46:01.917Z] [runtime-status] [25092] Trigger "app" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "app"
+[debug] [2020-05-02T14:46:01.919Z] [runtime-status] [25092] triggerDefinition {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2020-05-02T14:46:01.919Z] [runtime-status] [25092] Running app in mode HTTPS
+[debug] [2020-05-02T14:46:01.919Z] [runtime-status] [25092] Attempting to listen to socketPath: \\?\pipe\F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\25092
+[debug] [2020-05-02T14:46:01.921Z] [functions] Runtime ready! Sending request!
+[debug] [2020-05-02T14:46:01.949Z] [runtime-status] [25092] Ephemeral server handling POST request
+[info] >  { title: 'Sample Test', content: 's', link: 'ss', img_link: 'ss' }
+[debug] [2020-05-02T14:46:01.957Z] [runtime-status] [25092] Ephemeral server survived.
+[info] i  functions: Finished "app" in ~1s
+[debug] [2020-05-02T14:46:01.959Z] [worker-app-385a0baf-7d37-41fe-85ec-66da7f59433a]: IDLE
+[debug] [2020-05-02T14:46:01.959Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-02T14:49:59.926Z] File F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\index.js changed, reloading triggers
+[debug] [2020-05-02T14:50:00.131Z] File F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\index.js changed, reloading triggers
+[debug] [2020-05-02T14:50:01.132Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-05-02T14:50:01.132Z] [worker-~diagnostic~-0dd5e941-9eb3-4270-adb1-a59be414bfbd]: FINISHING
+[debug] [2020-05-02T14:50:01.133Z] [worker-pool] Shutting down IDLE worker (app)
+[debug] [2020-05-02T14:50:01.133Z] [worker-app-385a0baf-7d37-41fe-85ec-66da7f59433a]: FINISHING
+[debug] [2020-05-02T14:50:01.139Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-05-02T14:50:01.139Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-05-02T14:50:01.139Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-05-02T14:50:01.139Z] [worker-~diagnostic~-330a6679-4b75-4b8d-a132-466512396711]: Assigning socketPath: \\?\pipe\F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\11340
+[debug] [2020-05-02T14:50:01.139Z] [worker-~diagnostic~-330a6679-4b75-4b8d-a132-466512396711]: BUSY
+[debug] [2020-05-02T14:50:01.149Z] [worker-~diagnostic~-0dd5e941-9eb3-4270-adb1-a59be414bfbd]: exited
+[debug] [2020-05-02T14:50:01.149Z] [worker-~diagnostic~-0dd5e941-9eb3-4270-adb1-a59be414bfbd]: FINISHED
+[debug] [2020-05-02T14:50:01.151Z] [worker-app-385a0baf-7d37-41fe-85ec-66da7f59433a]: exited
+[debug] [2020-05-02T14:50:01.152Z] [worker-app-385a0baf-7d37-41fe-85ec-66da7f59433a]: FINISHED
+[debug] [2020-05-02T14:50:02.104Z] [runtime-status] [11340] Functions runtime initialized. {"cwd":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions","node_version":"10.15.3"}
+[debug] [2020-05-02T14:50:02.107Z] [runtime-status] [11340] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-05-02T14:50:02.111Z] [runtime-status] [11340] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-05-02T14:50:02.113Z] [runtime-status] [11340] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-05-02T14:50:02.115Z] [runtime-status] [11340] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-05-02T14:50:03.012Z] [worker-~diagnostic~-330a6679-4b75-4b8d-a132-466512396711]: IDLE
+[debug] [2020-05-02T14:50:23.212Z] File F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\index.js changed, reloading triggers
+[debug] [2020-05-02T14:50:23.428Z] File F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\index.js changed, reloading triggers
+[debug] [2020-05-02T14:50:24.429Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-05-02T14:50:24.429Z] [worker-~diagnostic~-330a6679-4b75-4b8d-a132-466512396711]: FINISHING
+[debug] [2020-05-02T14:50:24.430Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-05-02T14:50:24.430Z] [worker-pool] Cleaned up workers for app: 1 --> 0
+[debug] [2020-05-02T14:50:24.434Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-05-02T14:50:24.434Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-05-02T14:50:24.434Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-05-02T14:50:24.435Z] [worker-~diagnostic~-1a942d09-f7d3-4607-98ee-6c1a84ed415b]: Assigning socketPath: \\?\pipe\F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\27540
+[debug] [2020-05-02T14:50:24.435Z] [worker-~diagnostic~-1a942d09-f7d3-4607-98ee-6c1a84ed415b]: BUSY
+[debug] [2020-05-02T14:50:24.447Z] [worker-~diagnostic~-330a6679-4b75-4b8d-a132-466512396711]: exited
+[debug] [2020-05-02T14:50:24.447Z] [worker-~diagnostic~-330a6679-4b75-4b8d-a132-466512396711]: FINISHED
+[debug] [2020-05-02T14:50:25.338Z] [runtime-status] [27540] Functions runtime initialized. {"cwd":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions","node_version":"10.15.3"}
+[debug] [2020-05-02T14:50:25.340Z] [runtime-status] [27540] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-05-02T14:50:25.347Z] [runtime-status] [27540] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-05-02T14:50:25.349Z] [runtime-status] [27540] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-05-02T14:50:25.351Z] [runtime-status] [27540] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-05-02T14:50:26.255Z] [worker-~diagnostic~-1a942d09-f7d3-4607-98ee-6c1a84ed415b]: IDLE
+[debug] [2020-05-02T14:51:44.880Z] File F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\index.js changed, reloading triggers
+[debug] [2020-05-02T14:51:45.092Z] File F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\index.js changed, reloading triggers
+[debug] [2020-05-02T14:51:46.093Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-05-02T14:51:46.093Z] [worker-~diagnostic~-1a942d09-f7d3-4607-98ee-6c1a84ed415b]: FINISHING
+[debug] [2020-05-02T14:51:46.093Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-05-02T14:51:46.101Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-05-02T14:51:46.101Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-05-02T14:51:46.101Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-05-02T14:51:46.101Z] [worker-~diagnostic~-6aa95ad0-0e8d-4c3f-802f-deb8456f75f7]: Assigning socketPath: \\?\pipe\F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\15932
+[debug] [2020-05-02T14:51:46.101Z] [worker-~diagnostic~-6aa95ad0-0e8d-4c3f-802f-deb8456f75f7]: BUSY
+[debug] [2020-05-02T14:51:46.113Z] [worker-~diagnostic~-1a942d09-f7d3-4607-98ee-6c1a84ed415b]: exited
+[debug] [2020-05-02T14:51:46.113Z] [worker-~diagnostic~-1a942d09-f7d3-4607-98ee-6c1a84ed415b]: FINISHED
+[debug] [2020-05-02T14:51:46.839Z] [runtime-status] [15932] Functions runtime initialized. {"cwd":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions","node_version":"10.15.3"}
+[debug] [2020-05-02T14:51:46.846Z] [runtime-status] [15932] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-05-02T14:51:46.853Z] [runtime-status] [15932] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-05-02T14:51:46.856Z] [runtime-status] [15932] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-05-02T14:51:46.858Z] [runtime-status] [15932] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-05-02T14:51:47.721Z] [worker-~diagnostic~-6aa95ad0-0e8d-4c3f-802f-deb8456f75f7]: IDLE
+[debug] [2020-05-02T14:51:49.663Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-02T14:51:49.664Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-02T14:51:49.664Z] Accepted request POST /avinashvidyarthi/us-central1/app/notify --> app
+[debug] [2020-05-02T14:51:49.664Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-05-02T14:51:49.667Z] [worker-pool] addWorker(app)
+[debug] [2020-05-02T14:51:49.667Z] [worker-pool] Adding worker with key app, total=1
+[debug] [2020-05-02T14:51:49.667Z] [worker-pool] submitWork(triggerId=app)
+[debug] [2020-05-02T14:51:49.668Z] [worker-app-e874436f-b745-4eb3-bfd8-415b8e96e2c2]: Assigning socketPath: \\?\pipe\F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\18668
+[debug] [2020-05-02T14:51:49.669Z] [worker-app-e874436f-b745-4eb3-bfd8-415b8e96e2c2]: BUSY
+[debug] [2020-05-02T14:51:50.272Z] [runtime-status] [18668] Functions runtime initialized. {"cwd":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions","node_version":"10.15.3"}
+[debug] [2020-05-02T14:51:50.277Z] [runtime-status] [18668] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-05-02T14:51:50.282Z] [runtime-status] [18668] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-05-02T14:51:50.284Z] [runtime-status] [18668] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-05-02T14:51:50.286Z] [runtime-status] [18668] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"F:\\programs\\html_js\\portfolio\\startbootstrap-resume-gh-pages\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-05-02T14:51:51.035Z] [runtime-status] [18668] Trigger "app" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "app"
+[debug] [2020-05-02T14:51:51.037Z] [runtime-status] [18668] triggerDefinition {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2020-05-02T14:51:51.037Z] [runtime-status] [18668] Running app in mode HTTPS
+[debug] [2020-05-02T14:51:51.046Z] [runtime-status] [18668] Attempting to listen to socketPath: \\?\pipe\F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\18668
+[debug] [2020-05-02T14:51:51.059Z] [functions] Runtime ready! Sending request!
+[debug] [2020-05-02T14:51:51.119Z] [runtime-status] [18668] Ephemeral server handling POST request
+[debug] [2020-05-02T14:51:51.131Z] [runtime-status] [18668] Ephemeral server survived.
+[info] i  functions: Finished "app" in ~2s
+[debug] [2020-05-02T14:51:53.758Z] [worker-app-e874436f-b745-4eb3-bfd8-415b8e96e2c2]: IDLE
+[debug] [2020-05-02T14:51:53.758Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/avinashvidyarthi/us-central1/app for local Function app
+[debug] [2020-05-02T14:52:32.492Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-02T14:52:32.492Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-02T14:52:32.493Z] Accepted request GET /avinashvidyarthi/us-central1/app/favicon.ico --> app
+[debug] [2020-05-02T14:52:32.493Z] [worker-pool] submitWork(triggerId=app)
+[debug] [2020-05-02T14:52:32.493Z] [worker-app-e874436f-b745-4eb3-bfd8-415b8e96e2c2]: Assigning socketPath: \\?\pipe\F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\18668
+[debug] [2020-05-02T14:52:32.493Z] [worker-app-e874436f-b745-4eb3-bfd8-415b8e96e2c2]: BUSY
+[debug] [2020-05-02T14:52:32.494Z] [runtime-status] [18668] Trigger "app" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "app"
+[debug] [2020-05-02T14:52:32.512Z] [runtime-status] [18668] triggerDefinition {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2020-05-02T14:52:32.512Z] [runtime-status] [18668] Running app in mode HTTPS
+[debug] [2020-05-02T14:52:32.512Z] [runtime-status] [18668] Attempting to listen to socketPath: \\?\pipe\F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\18668
+[debug] [2020-05-02T14:52:32.515Z] [functions] Runtime ready! Sending request!
+[debug] [2020-05-02T14:52:32.520Z] [runtime-status] [18668] Ephemeral server handling GET request
+[debug] [2020-05-02T14:52:32.524Z] [runtime-status] [18668] Ephemeral server survived.
+[info] i  functions: Finished "app" in ~1s
+[debug] [2020-05-02T14:52:32.549Z] [worker-app-e874436f-b745-4eb3-bfd8-415b8e96e2c2]: IDLE
+[debug] [2020-05-02T14:52:32.549Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-02T14:53:02.421Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-02T14:53:02.422Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-02T14:53:02.422Z] Accepted request POST /avinashvidyarthi/us-central1/app/notify --> app
+[debug] [2020-05-02T14:53:02.422Z] [worker-pool] submitWork(triggerId=app)
+[debug] [2020-05-02T14:53:02.422Z] [worker-app-e874436f-b745-4eb3-bfd8-415b8e96e2c2]: Assigning socketPath: \\?\pipe\F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\18668
+[debug] [2020-05-02T14:53:02.422Z] [worker-app-e874436f-b745-4eb3-bfd8-415b8e96e2c2]: BUSY
+[debug] [2020-05-02T14:53:02.422Z] [runtime-status] [18668] Trigger "app" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "app"
+[debug] [2020-05-02T14:53:02.424Z] [runtime-status] [18668] triggerDefinition {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2020-05-02T14:53:02.424Z] [runtime-status] [18668] Running app in mode HTTPS
+[debug] [2020-05-02T14:53:02.424Z] [runtime-status] [18668] Attempting to listen to socketPath: \\?\pipe\F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\18668
+[debug] [2020-05-02T14:53:02.425Z] [functions] Runtime ready! Sending request!
+[debug] [2020-05-02T14:53:02.489Z] [runtime-status] [18668] Ephemeral server handling POST request
+[debug] [2020-05-02T14:53:02.490Z] [runtime-status] [18668] Ephemeral server survived.
+[info] i  functions: Finished "app" in ~1s
+[debug] [2020-05-02T14:53:03.802Z] [worker-app-e874436f-b745-4eb3-bfd8-415b8e96e2c2]: IDLE
+[debug] [2020-05-02T14:53:03.802Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-02T14:54:24.161Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-02T14:54:24.161Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-02T14:54:24.161Z] Accepted request POST /avinashvidyarthi/us-central1/app/notify --> app
+[debug] [2020-05-02T14:54:24.161Z] [worker-pool] submitWork(triggerId=app)
+[debug] [2020-05-02T14:54:24.161Z] [worker-app-e874436f-b745-4eb3-bfd8-415b8e96e2c2]: Assigning socketPath: \\?\pipe\F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\18668
+[debug] [2020-05-02T14:54:24.161Z] [worker-app-e874436f-b745-4eb3-bfd8-415b8e96e2c2]: BUSY
+[debug] [2020-05-02T14:54:24.162Z] [runtime-status] [18668] Trigger "app" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "app"
+[debug] [2020-05-02T14:54:24.163Z] [runtime-status] [18668] triggerDefinition {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2020-05-02T14:54:24.164Z] [runtime-status] [18668] Running app in mode HTTPS
+[debug] [2020-05-02T14:54:24.164Z] [runtime-status] [18668] Attempting to listen to socketPath: \\?\pipe\F:\programs\html_js\portfolio\startbootstrap-resume-gh-pages\functions\18668
+[debug] [2020-05-02T14:54:24.166Z] [functions] Runtime ready! Sending request!
+[debug] [2020-05-02T14:54:24.170Z] [runtime-status] [18668] Ephemeral server handling POST request
+[debug] [2020-05-02T14:54:24.170Z] [runtime-status] [18668] Ephemeral server survived.
+[info] i  functions: Finished "app" in ~1s
+[debug] [2020-05-02T14:54:25.403Z] [worker-app-e874436f-b745-4eb3-bfd8-415b8e96e2c2]: IDLE
+[debug] [2020-05-02T14:54:25.403Z] [work-queue] {"queueLength":0,"workRunningCount":0}
