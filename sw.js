@@ -3,8 +3,6 @@ self.addEventListener("install", function (event) {
   event.waitUntil(
     caches.open("static").then(function (cache) {
       cache.addAll([
-        "index.html",
-        "avinash_resume.pdf",
         "vendor/bootstrap/css/bootstrap.min.css",
         "https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700",
         "https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i",
@@ -21,7 +19,6 @@ self.addEventListener("install", function (event) {
         "vendor/fontawesome-free/webfonts/fa-solid-900.woff",
         "vendor/fontawesome-free/webfonts/fa-solid-900.woff2",
       ]);
-      cache.add("/");
     })
   );
 });
@@ -43,6 +40,7 @@ self.addEventListener("notificationclick", function (event) {
   var action = event.action;
   console.log(notification);
   clients.openWindow(notification.data.url);
+  notification.close();
 });
 
 self.addEventListener("push", function (event) {
