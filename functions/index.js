@@ -88,6 +88,13 @@ app.get("/test-notification", (req, res) => {
     });
 });
 
+
+app.get('/no-of-subs',(req,res)=>{
+db.collection("subscription").get().then((subs)=>{
+  res.json({length:subs});
+}).catch(()=>{});
+})
+
 app.post("/notify",(req,res)=>{
     db.collection("subscription")
     .get()
