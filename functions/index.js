@@ -91,7 +91,11 @@ app.get("/test-notification", (req, res) => {
 
 app.get('/no-of-subs',(req,res)=>{
 db.collection("subscription").get().then((subs)=>{
-  res.json({length:subs.length});
+  let i=0;
+  subs.forEach((S)=>{
+    i++;
+  })
+  res.json({length:i});
 }).catch(()=>{res.json({error:true});});
 })
 
