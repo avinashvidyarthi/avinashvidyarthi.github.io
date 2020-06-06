@@ -1,5 +1,7 @@
 self.addEventListener("install", function (event) {
   console.log("[SW] Install");
+  caches.delete('static');
+  self.skipWaiting();
   event.waitUntil(
     caches.open("static").then(function (cache) {
       cache.addAll([
@@ -61,4 +63,8 @@ self.addEventListener("push", function (event) {
       options.image=data.image;
   }
   event.waitUntil(self.registration.showNotification(data.title, options));
+});
+
+self.addEventListener('activate', function(event){
+  console.log("[SW] Activated");
 });
