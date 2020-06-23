@@ -14,7 +14,6 @@ self.addEventListener("install", function (event) {
         "vendor/jquery/jquery.min.js",
         "vendor/bootstrap/js/bootstrap.bundle.min.js",
         "vendor/jquery-easing/jquery.easing.min.js",
-        "js/resume.js",
         "vendor/fontawesome-free/webfonts/fa-brands-400.woff",
         "vendor/fontawesome-free/webfonts/fa-brands-400.ttf",
         "vendor/fontawesome-free/webfonts/fa-brands-400.woff2",

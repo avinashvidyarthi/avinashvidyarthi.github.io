@@ -42,7 +42,34 @@ window.addEventListener('beforeinstallprompt',function(event){
 // showing enable notification btn
 if('notification' in window && 'serviceWorker' in navigator){
   if(window.Notification.permission!=='granted'){
+    $(".enabled-notification").addClass('d-none');
     $(".enable-notification").removeClass('d-none');
+  }
+}
+
+function contactMe(){
+  const name =$("#name");
+  const subject = $("#subject");
+  const message = $("#message");
+
+  let url = "mailto:avinashvidyarthi@gmail.com?subject="+subject.val()+"&body=Hi Avinash,%0d%0a";
+  url+=message.val();
+  url+="%0d%0a%0d%0aThanks and Regards%0d%0a"+name.val();
+  window.location=url;
+
+  name.val('');
+  subject.val('');
+  message.val('');
+}
+
+function showContact(){
+  if('notification' in window && 'serviceWorker' in navigator){
+    if(window.Notification.permission!=='granted'){
+      $(".enable-notification").removeClass('d-none');
+    }
+    else{
+      $(".enabled-notification").removeClass('d-none');
+    }
   }
 }
 
@@ -107,6 +134,7 @@ function enableNotification(){
       if(choice==='granted'){
         $(".enable-notification").addClass('d-none');
         configurePushSub();
+        showContact();
       }
     });
   }
