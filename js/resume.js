@@ -52,9 +52,9 @@ function contactMe(){
   const subject = $("#subject");
   const message = $("#message");
 
-  let url = "mailto:avinashvidyarthi@gmail.com?subject="+subject.val()+"&body=Hi Avinash,%0d%0a";
+  let url = "mailto:avinashvidyarthi@gmail.com?subject="+subject.val()+"&body=Hi Avinash,%0D%0A";
   url+=message.val();
-  url+="%0d%0a%0d%0aThanks and Regards%0d%0a"+name.val();
+  url+="%0D%0A%0D%0AThanks and Regards%0D%0A"+name.val();
   window.location=url;
 
   name.val('');
