@@ -65,7 +65,7 @@ function contactMe(){
 function showContact(){
   if('notification' in window && 'serviceWorker' in navigator){
     if(window.Notification.permission!=='granted'){
-      $(".enable-notification").removeClass('d-none');
+      // $(".enable-notification").removeClass('d-none');
     }
     else{
       $(".enabled-notification").removeClass('d-none');
