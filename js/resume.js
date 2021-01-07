@@ -39,13 +39,13 @@ window.addEventListener('beforeinstallprompt',function(event){
 })
 
 
-// showing enable notification btn
-if('notification' in window && 'serviceWorker' in navigator){
-  if(window.Notification.permission!=='granted'){
-    $(".enabled-notification").addClass('d-none');
-    $(".enable-notification").removeClass('d-none');
-  }
-}
+// // showing enable notification btn
+// if('notification' in window && 'serviceWorker' in navigator){
+//   if(window.Notification.permission!=='granted'){
+//     $(".enabled-notification").addClass('d-none');
+//     $(".enable-notification").removeClass('d-none');
+//   }
+// }
 
 function contactMe(){
   const name =$("#name");
