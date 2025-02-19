@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	line-height: 1.6;
+	background-color: #f4f4f4;
+	color: #333;
+}
+
+header {
+	background-color: #2c3e50;
+	padding: 1rem;
+	text-align: center;
+}
+
+header h1 {
+	color: #fff;
+	font-size: 2rem;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	display: inline-block;
+	margin: 0 1rem;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.hero {
+	background-color: #34495e;
+	color: #fff;
+	padding: 3rem;
+	text-align: center;
+}
+
+.hero h2 {
+	font-size: 2.5rem;
+}
+
+.hero p {
+	font-size: 1.2rem;
+}
+
+.cta {
+	display: inline-block;
+	background-color: #e74c3c;
+	color: #fff;
+	padding: 0.75rem 1.5rem;
+	border-radius: 25px;
+	margin-top: 1rem;
+	text-decoration: none;
+}
+
+section {
+	padding: 2rem;
+	text-align: center;
+}
+
+h2 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.skillset {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+.skill {
+	background-color: #1abc9c;
+	padding: 0.75rem;
+	border-radius: 25px;
+	color: #fff;
+	font-size: 1rem;
+	margin: 0.5rem;
+}
+
+.projects-container {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.project-card {
+	background-color: #ecf0f1;
+	padding: 1.5rem;
+	border-radius: 10px;
+	width: 45%;
+}
+
+footer {
+	background-color: #2c3e50;
+	color: #fff;
+	padding: 1rem;
+	text-align: center;
+}
