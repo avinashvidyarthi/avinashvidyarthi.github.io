@@ -1,1208 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=UA-116679066-5"
-		></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Avinash Kumar - Cloud Engineer & DevOps Specialist with 3+ years experience in GCP and AWS">
+    <meta name="keywords" content="Avinash Kumar, Cloud Engineer, DevOps, GCP, AWS, Full Stack Developer">
+    <meta name="author" content="Avinash Kumar">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Avinash Kumar - Cloud Engineer">
+    <meta property="og:description" content="Cloud Engineer & DevOps Specialist">
+    <meta property="og:image" content="./img/avinash_image_cropped.png">
+    <meta property="og:url" content="https://avinashvidyarthi.github.io">
+    
+    <title>Avinash Kumar - Cloud Engineer</title>
+    
+    <link rel="icon" href="./img/avinash_image_cropped.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">AK</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-			gtag('config', 'UA-116679066-5');
-		</script>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Avinash Kumar</span>
+                </h1>
+                <p class="hero-subtitle">Cloud Engineer & DevOps Specialist</p>
+                <p class="hero-description">
+                    Certified Cloud Architect with 3+ years of experience in GCP and AWS, 
+                    specializing in scalable cloud solutions and infrastructure automation.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="./avinashResume.pdf" target="_blank" class="btn btn-secondary">Download Resume</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/avinashvidyarthi" target="_blank" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/avinashvidyarthi" target="_blank" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=+917765034079&text=Hello" target="_blank" aria-label="WhatsApp">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
 
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, shrink-to-fit=no"
-		/>
-		<meta
-			name="keywords"
-			content="Avinash Kumar, Avinash Vidyarthi, Full Stack Developer, MEAN Developer"
-		/>
-		<meta name="description" content="Full Stack Web Developer" />
-
-		<title>Avinash Kumar</title>
-
-		<!-- Bootstrap core CSS -->
-		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
-		<!-- Custom fonts for this template -->
-		<link
-			href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
-			rel="stylesheet"
-		/>
-		<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
-
-		<!-- Custom styles for this template -->
-		<link href="css/resume.css" rel="stylesheet" />
-		<!-- chrome theme color-->
-		<meta name="theme-color" content="#bd5d38" />
-
-		<!-- <meta property="og:url" content="https://avinashvidyarthi.github.io" /> -->
-		<meta property="og:type" content="website" />
-		<meta property="og:site_name" content="Avinash Kumar" />
-		<meta property="og:title" content="Avinash Kumar" />
-		<meta
-			property="og:description"
-			content="JavaScript Developer and Cloud Architect"
-		/>
-
-		<meta property="og:locale" content="en_IN" />
-		<meta property="og:locale:alternate" content="hi_IN" />
-
-		<meta
-			property="og:image"
-			content="https://avinashvidyarthi.github.io/img/avinash_image_cropped.png"
-		/>
-		<meta property="og:image:type" content="image/jpeg" />
-		<meta property="og:image:alt" content="description" />
-		<meta property="og:image:width" content="240" />
-		<meta property="og:image:height" content="240" />
-
-		<link
-			rel="icon"
-			href="./img/avinash_image_cropped.png"
-			type="image/jpg"
-			sizes="16x16"
-		/>
-		<link rel="manifest" href="manifest.json" />
-	</head>
-
-	<body id="page-top">
-		<nav
-			class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
-			id="sideNav"
-		>
-			<a class="navbar-brand js-scroll-trigger" href="#page-top">
-				<span class="d-block d-lg-none">Avinash Kumar</span>
-				<span class="d-none d-lg-block">
-					<img
-						class="img-fluid img-profile rounded-circle mx-auto mb-2"
-						src="img/avinash_image_cropped.png"
-						alt=""
-					/>
-				</span>
-			</a>
-			<button
-				class="navbar-toggler"
-				type="button"
-				data-toggle="collapse"
-				data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#about">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#experience"
-							>Experience</a
-						>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#education"
-							>Education</a
-						>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#certification"
-							>Certification</a
-						>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#blogs">Blogs</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-					</li>
-					<li class="nav-item">
-						<a
-							class="nav-link js-scroll-trigger"
-							href="./avinashResume.pdf"
-							target="_blank"
-							>Resume</a
-						>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#notification"
-							>Contact Me</a
-						>
-					</li>
-				</ul>
-			</div>
-		</nav>
-
-		<div class="container-fluid p-0">
-			<section
-				class="resume-section p-3 p-lg-5 d-flex align-items-center"
-				id="about"
-			>
-				<div class="w-100">
-					<!-- <div class="row">
-                    <div class="col-1"></div>
-                    <div class="col-8">
-                        <div class="d-block d-lg-none mb-5" style="border-radius: 50%; background-color: #ca7d60;">
-                            <img src="./img/p1.jpg" class="img-fluid rounded-circle p-3" alt="">
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a Cloud Engineer with 3+ years of experience in GCP and AWS. As a certified 
+                        Cloud & DevOps Engineer, I specialize in designing and deploying scalable, 
+                        secure cloud-based solutions.
+                    </p>
+                    <p>
+                        My expertise spans cloud infrastructure, security implementation, migration projects, 
+                        and infrastructure automation. I combine cloud technologies with web development 
+                        skills in JavaScript and NodeJS to deliver comprehensive solutions.
+                    </p>
+                    <p>
+                        Currently working as a Sr. Platform Engineer at Quantiphi, helping customers scale 
+                        securely on the cloud. I'm passionate about mentorship and cool projects.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-label">Location:</span>
+                            <span class="info-value">Bengaluru, Karnataka, India</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span class="info-value">avinashvidyarthi@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Phone:</span>
+                            <span class="info-value">+91 7765034079</span>
                         </div>
                     </div>
-                </div> -->
-					<h1 class="mb-0">
-						Avinash
-						<span class="text-primary">Kumar</span>
-					</h1>
-					<div class="subheading mb-5">
-						Bengaluru · Karnataka · India - 500081 ·
-						<a href="tel:+917765034079">(+91)7765034079</a> ·
-						<a href="mailto:avinashvidyarthi@gmail.com"
-							>avinashvidyarthi@gmail.com</a
-						>
-					</div>
-					<p class="lead mb-5">
-						<!-- I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. -->
-						Hi there! I'm Avinash, a Cloud Engineer with 3+ years of experience
-						in GCP and AWS. As a Cloud & DevOps Engineer certified by GCP & AWS,
-						I am well-versed in designing and deploying scalable cloud-based
-						solutions. In addition to cloud technologies, I have knowledge and
-						experience in web development using JavaScript and NodeJS. This
-						makes me a versatile professional with a unique skill set that can
-						help organizations succeed in their cloud journey.
-						<br /><br />
-						I am open for Mentorship & Cool Projects. &nbsp;
-						<a
-							class="js-scroll-trigger"
-							href="https://calendar.app.google/AUTz2dfqUDb3LfxG8"
-							target="_blank"
-							>Schedule a meeting!</a
-						>
-					</p>
-					<div class="social-icons">
-						<a href="http://linkedin.com/in/avinashvidyarthi" target="_blank">
-							<i class="fab fa-linkedin-in"></i>
-						</a>
-						<a href="http://github.com/avinashvidyarthi" target="_blank">
-							<i class="fab fa-github"></i>
-						</a>
-						<a
-							href="https://www.facebook.com/avinash.vidyarthi"
-							target="_blank"
-						>
-							<i class="fab fa-facebook-f"></i>
-						</a>
-						<a
-							href="https://api.whatsapp.com/send?phone=+917765034079&text=Hello"
-							target="_blank"
-						>
-							<i class="fab fa-whatsapp"></i>
-						</a>
-					</div>
-				</div>
-			</section>
+                    <a href="https://calendar.app.google/AUTz2dfqUDb3LfxG8" target="_blank" class="btn btn-primary">Schedule a Meeting</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<hr class="m-0" />
+    <!-- Experience Section -->
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jan 2023 - Present</div>
+                        <h3>Sr. Platform Engineer</h3>
+                        <h4>Quantiphi</h4>
+                        <p>Working as Cloud & DevOps Engineer helping customers scale and be secured on cloud.</p>
+                        <ul>
+                            <li>Expert in cloud security, implementing robust measures to protect data and applications</li>
+                            <li>Leading cloud infrastructure projects ensuring scalability and cost-efficiency</li>
+                        </ul>
+                    </div>
+                </div>
 
-			<section
-				class="resume-section p-3 p-lg-5 d-flex justify-content-center"
-				id="experience"
-			>
-				<div class="w-100">
-					<h2 class="mb-5">Experience</h2>
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">Sr. Platform Engineer</h3>
-							<div class="subheading mb-3">Quantiphi</div>
-							<p>
-								Working as Cloud & DevOps Engineer in helping customer scale and
-								be secured on cloud
-							</p>
-							<ul>
-								<li>
-									Expert in cloud security, implementing robust measures to
-									protect data and applications.
-								</li>
-								value of cloud services.
-							</ul>
-						</div>
-						<div class="resume-date text-md-right">
-							<span class="text-primary">Jan 2023 - Present</span>
-						</div>
-					</div>
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">Sr. Research Associate</h3>
-							<div class="subheading mb-3">CloudThat</div>
-							<p>Working with Infra, Migration and Security on AWS and GCP</p>
-							<ul>
-								<li>
-									Leading successful cloud infrastructure creation projects,
-									ensuring scalability and cost-efficiency
-								</li>
-								<li>
-									Expert in cloud security, implementing robust measures to
-									protect data and applications.
-								</li>
-								<li>
-									Led seamless cloud migration projects with minimal downtime
-									and disruptions.
-								</li>
-								<li>
-									Played a key role in pre-sales tasks, securing new projects
-									and building client relationships.
-								</li>
-								<li>
-									Implemented solutions that align with client goals, maximizing
-									the value of cloud services.
-								</li>
-							</ul>
-						</div>
-						<div class="resume-date text-md-right">
-							<span class="text-primary">Jan 2023 - Present</span>
-						</div>
-					</div>
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">Programmer Analyst</h3>
-							<div class="subheading mb-3">Cognizant</div>
-							<p>Working on managed services of Google Cloud Platform.</p>
-							<ul>
-								<li>Learning Cloud Technologies in depth</li>
-								<li>
-									Got certified as Professional Cloud Architect & Associate
-									Cloud Architect by Google Cloud
-								</li>
-								<li>
-									Working with managed products of GCP. Eg: App Engine, Cloud
-									Run, Cloud SQL, etc
-								</li>
-								<li>Working on automating the workflow</li>
-							</ul>
-						</div>
-						<div class="resume-date text-md-right">
-							<span class="text-primary">July 2021 - Jan 2023</span>
-						</div>
-					</div>
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">Junior Web Developer</h3>
-							<div class="subheading mb-3">Zignuts Technolab</div>
-							<p>
-								Worked on backend with technologies like NodeJS, SailsJS, AWS on
-								project
-								<a target="_blank" href="https://silvatree.co">Silvatree</a>
-							</p>
-							<ul>
-								<li>Implemented backend referral scenario for the project</li>
-								<li>Used many AWS products like S3, Cognito, SNS, SQS, etc.</li>
-								<li>Worked with serverless architecture using AWS lambda</li>
-								<li>Worked with various DBs like MySQL & MongoDB</li>
-							</ul>
-						</div>
-						<div class="resume-date text-md-right">
-							<span class="text-primary">Sept 2020 - July 2021</span>
-						</div>
-					</div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jan 2023 - Present</div>
+                        <h3>Sr. Research Associate</h3>
+                        <h4>CloudThat</h4>
+                        <p>Working with Infrastructure, Migration and Security on AWS and GCP.</p>
+                        <ul>
+                            <li>Led seamless cloud migration projects with minimal downtime</li>
+                            <li>Played key role in pre-sales tasks, securing new projects</li>
+                            <li>Implemented solutions aligning with client goals</li>
+                        </ul>
+                    </div>
+                </div>
 
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">Freelance Backend Developer</h3>
-							<div class="subheading mb-3">Heurex Software Solution</div>
-							<p>
-								I was working as a Freelance Backend Developer working in NodeJs
-								for 3 months.
-							</p>
-						</div>
-						<div class="resume-date text-md-right">
-							<span class="text-primary">May 2020 - July 2020</span>
-						</div>
-					</div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">July 2021 - Jan 2023</div>
+                        <h3>Programmer Analyst</h3>
+                        <h4>Cognizant</h4>
+                        <p>Working on managed services of Google Cloud Platform.</p>
+                        <ul>
+                            <li>Got certified as Professional Cloud Architect & Associate Cloud Engineer</li>
+                            <li>Worked with GCP managed products: App Engine, Cloud Run, Cloud SQL</li>
+                            <li>Automated workflows and infrastructure processes</li>
+                        </ul>
+                    </div>
+                </div>
 
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">Web Developer</h3>
-							<div class="subheading mb-3">Matrubhumi Shelters Pvt. Ltd.</div>
-							<p>
-								Worked on the website for Matrubhumi Shelters Pvt. Ltd. to
-								provide attractive and responsive look to the user interface.<a
-									href="http://matrubhumishelters.com"
-									target="_blank"
-									class="nav-link"
-									>Visit site</a
-								>
-							</p>
-						</div>
-						<div class="resume-date text-md-right">
-							<span class="text-primary">July 2019 - Oct 2019</span>
-						</div>
-					</div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Sept 2020 - July 2021</div>
+                        <h3>Junior Web Developer</h3>
+                        <h4>Zignuts Technolab</h4>
+                        <p>Backend development with NodeJS, SailsJS, and AWS.</p>
+                        <ul>
+                            <li>Implemented backend referral scenarios</li>
+                            <li>Worked with AWS services: S3, Cognito, SNS, SQS, Lambda</li>
+                            <li>Experience with MySQL and MongoDB</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">Web Developer</h3>
-							<div class="subheading mb-3">AVYAKT(GIETU Gunupur)</div>
-							<p>
-								Member of the team which developed and maintained the website
-								for CSE branch fest at GIET Gunupur and served a backend
-								developer.
-							</p>
-						</div>
-						<div class="resume-date text-md-right">
-							<span class="text-primary">Sept 2018 - Dec 2018</span>
-						</div>
-					</div>
-				</div>
-			</section>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills & Certifications</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Cloud Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Amazon Web Services</span>
+                        <span class="skill-tag">Google Cloud Platform</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Programming & Scripting</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">NodeJS</span>
+                        <span class="skill-tag">Shell Scripting</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>DevOps & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Terraform</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Docker</span>
+                    </div>
+                </div>
+            </div>
 
-			<hr class="m-0" />
+            <div class="certifications">
+                <h3 class="subsection-title">Certifications</h3>
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <div class="cert-icon">🏆</div>
+                        <h4>AWS Solutions Architect</h4>
+                        <p>Associate Level</p>
+                        <a href="https://www.credly.com/badges/53620b2b-a481-4a16-992a-f73a8790c2f1/public_url" target="_blank" class="cert-link">View Certificate</a>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">🏆</div>
+                        <h4>GCP Professional Cloud Architect</h4>
+                        <p>Professional Level</p>
+                        <a href="https://www.credential.net/d10bed3d-4746-4a34-a404-991632029cbe" target="_blank" class="cert-link">View Certificate</a>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">🏆</div>
+                        <h4>GCP Associate Cloud Engineer</h4>
+                        <p>Associate Level</p>
+                        <a href="https://www.credential.net/8893bbf1-5043-414e-87b6-eb3cd9113d6c" target="_blank" class="cert-link">View Certificate</a>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">🏆</div>
+                        <h4>Backend Development & APIs</h4>
+                        <p>FreeCodeCamp</p>
+                        <a href="https://www.freecodecamp.org/certification/fcc8b2e08a7-6521-4e9c-9160-47c6dd0163f7/back-end-development-and-apis" target="_blank" class="cert-link">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<section
-				class="resume-section p-3 p-lg-5 d-flex align-items-center"
-				id="education"
-			>
-				<div class="w-100">
-					<h2 class="mb-5">Education</h2>
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>E-Pariksha</h3>
+                    <p class="project-tech">Angular • NodeJS • MongoDB • Zoho</p>
+                    <p class="project-desc">Online MCQ contest platform for seamless test hosting and management.</p>
+                    <div class="project-links">
+                        <a href="https://youtu.be/MN-74W23k4A" target="_blank">Demo</a>
+                        <a href="https://e-pariksha-yoih563s5a-uc.a.run.app" target="_blank">Live Site</a>
+                    </div>
+                </div>
 
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">GIET University, Gunupur</h3>
-							<div class="subheading mb-3">Bachelor of Technology</div>
-							<div>Computer Science Engineering</div>
-							<p>CGPA: 9.18</p>
-						</div>
-						<div class="resume-date text-md-right">
-							<span class="text-primary">2017 - 2021</span>
-						</div>
-					</div>
+                <div class="project-card">
+                    <h3>CALLZ</h3>
+                    <p class="project-tech">WebRTC • NodeJS • Socket.io</p>
+                    <p class="project-desc">One-to-one video call and chat room portal using WebRTC technology.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/avinashvidyarthi/callz" target="_blank">GitHub</a>
+                        <a href="https://callz-yoih563s5a-uc.a.run.app" target="_blank">Live Site</a>
+                    </div>
+                </div>
 
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">K.L.S College, Nawada, Bihar</h3>
-							<div class="subheading mb-3">I.Sc</div>
-							<p>Percentage: 70%</p>
-						</div>
-						<div class="resume-date text-md-right">
-							<span class="text-primary">2014 - 2016</span>
-						</div>
-					</div>
+                <div class="project-card">
+                    <h3>Draw-It</h3>
+                    <p class="project-tech">NodeJS • Socket.io • Canvas API</p>
+                    <p class="project-desc">Collaborative drawing canvas where multiple users can draw in real-time.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/avinashvidyarthi/drawIt" target="_blank">GitHub</a>
+                        <a href="https://draww-it.herokuapp.com/" target="_blank">Live Site</a>
+                    </div>
+                </div>
 
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">T.M.V.M Pawapuri</h3>
-							<div class="subheading mb-3">Matriculation</div>
-							<p>CGPA: 9.8</p>
-						</div>
-						<div class="resume-date text-md-right">
-							<span class="text-primary">2014</span>
-						</div>
-					</div>
-				</div>
-			</section>
+                <div class="project-card">
+                    <h3>Type Racer</h3>
+                    <p class="project-tech">AngularJS • NodeJS • MySQL</p>
+                    <p class="project-desc">Typing speed measurement tool with real-time WPM calculation.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/avinashvidyarthi/TypeRacer" target="_blank">GitHub</a>
+                        <a href="http://type--racer.herokuapp.com" target="_blank">Live Site</a>
+                    </div>
+                </div>
+            </div>
 
-			<hr class="m-0" />
+            <div class="blogs-section">
+                <h3 class="subsection-title">Recent Blog Posts</h3>
+                <ul class="blog-list">
+                    <li><a href="https://www.cloudthat.com/resources/blog/manage-and-run-applications-as-containers-using-gcp-cloud-run" target="_blank">Manage and Run Containers using GCP Cloud Run</a></li>
+                    <li><a href="https://www.cloudthat.com/resources/blog/scheduling-cloud-functions-using-gcp-cloud-scheduler" target="_blank">Scheduling Cloud Functions using GCP Cloud Scheduler</a></li>
+                    <li><a href="https://www.cloudthat.com/resources/blog/streamlining-access-control-for-enhanced-security-with-gcp-compute-engine" target="_blank">Streamlining Access Control for Enhanced Security with GCP Compute Engine</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-			<section
-				class="resume-section p-3 p-lg-5 d-flex align-items-center"
-				id="skills"
-			>
-				<div class="w-100">
-					<h2 class="mb-5">Skills</h2>
-					<div class="row">
-						<div class="col-md-3 col-12 neo">
-							<div class="subheading mb-3">Cloud Technologies</div>
-							<ul>
-								<li>Amazon Web Services</li>
-								<li>Google Cloud Platform</li>
-							</ul>
-						</div>
-						<div class="col-md-3 col-12 neo">
-							<div class="subheading mb-3">Scripting Languages</div>
-							<ul>
-								<li>JavScript</li>
-								<li>Python</li>
-								<li>NodeJS</li>
-								<li>Shell Scripting</li>
-							</ul>
-						</div>
-						<div class="col-md-3 col-12 neo">
-							<div class="subheading mb-3">Others</div>
-							<ul>
-								<li>Git</li>
-								<li>TerraForm</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>I'm open for mentorship, collaboration, and cool projects. Feel free to reach out!</p>
+                    <div class="contact-methods">
+                        <a href="mailto:avinashvidyarthi@gmail.com" class="contact-method">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>avinashvidyarthi@gmail.com</span>
+                        </a>
+                        <a href="tel:+917765034079" class="contact-method">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <span>+91 7765034079</span>
+                        </a>
+                        <a href="https://calendar.app.google/AUTz2dfqUDb3LfxG8" target="_blank" class="contact-method">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            <span>Schedule a Meeting</span>
+                        </a>
+                    </div>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-			<hr class="m-0" />
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Avinash Kumar. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/avinashvidyarthi" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/avinashvidyarthi" target="_blank">GitHub</a>
+                    <a href="./avinashResume.pdf" target="_blank">Resume</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-			<section
-				class="resume-section p-3 p-lg-5 d-flex justify-content-center"
-				id="projects"
-			>
-				<div class="w-100">
-					<h2 class="mb-5">Projects</h2>
-
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">E-Pariksha</h3>
-							<div class="subheading mb-3">Angular, NodeJS, MongoDB, Zoho</div>
-							<p>
-								This is an online MCQ contest site where one can host MCQ
-								contest seamlessly.
-								<br />
-								<a href="https://youtu.be/MN-74W23k4A" target="_blank"
-									>Demo Video</a
-								>&nbsp;
-								<a
-									href="https://e-pariksha-yoih563s5a-uc.a.run.app"
-									target="_blank"
-									>See project</a
-								>
-							</p>
-						</div>
-					</div>
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">CALLZ</h3>
-							<div class="subheading mb-3">
-								HTML, CSS, Bootstrap, NodeJS, Socket.io
-							</div>
-							<p>
-								One to one video call/chat room portal.
-								<br />
-								<a
-									href="https://www.linkedin.com/posts/avinashvidyarthi_webrtc-endabrtoabrend-web-activity-6690444327237296128-9mEX"
-									target="_blank"
-									>Demo Video</a
-								>&nbsp;
-								<a
-									href="https://github.com/avinashvidyarthi/callz"
-									target="_blank"
-									>Github Repo</a
-								>&nbsp;
-								<a href="https://callz-yoih563s5a-uc.a.run.app" target="_blank"
-									>See project</a
-								>
-							</p>
-						</div>
-					</div>
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">Riverine Education</h3>
-							<div class="subheading mb-3">Angular 8</div>
-							<p>
-								This is the official website of RIverine Education, Majuli
-								<br />
-								<a href="https://riverineeducation.in/" target="_blank">
-									Visit Site
-								</a>
-							</p>
-						</div>
-					</div>
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">Doubt Clearance Cell</h3>
-							<div class="subheading mb-3">
-								HTML, CSS, jQuery, Bootstrap, PHP, MySQL
-							</div>
-							<p>
-								This project is focused on clearing the doubts. Users can upload
-								their doubt and other user can help them clear their doubt
-								<br />
-								<a
-									href="http://github.com/avinashvidyarthi/doubt"
-									target="_blank"
-								>
-									Github Repo </a
-								>&nbsp;
-								<a
-									href="https://drive.google.com/file/d/1aG0giUl09NrGVcIj__QJYWnSJqFyp_o9/view?usp=sharing"
-									target="_blank"
-								>
-									View PPT </a
-								>&nbsp;
-								<a href="http://doubt.byethost24.com/" target="_blank"
-									>See project</a
-								>
-							</p>
-						</div>
-					</div>
-
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">Type Racer</h3>
-							<div class="subheading mb-3">
-								AngularJs, Bootstrap, NodeJs, MySQL
-							</div>
-							<p>
-								This is a website which measures the typing speed of a user. The
-								user will be given a paragraph and they have to type that as
-								fast as they can.
-								<br />
-								<a
-									href="http://github.com/avinashvidyarthi/TypeRacer"
-									target="_blank"
-								>
-									Github Repo </a
-								>&nbsp;
-								<a href="http://type--racer.herokuapp.com" target="_blank"
-									>See project</a
-								>
-							</p>
-						</div>
-					</div>
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">Draw-It</h3>
-							<div class="subheading mb-3">HTML, CSS, NodeJS, SocketIO</div>
-							<p>
-								You can join in the same room and can draw on the same canvas.
-								It uses NodeJS and SocketIO to draw on the canvas
-								collaboratively.
-								<br />
-								<a
-									href="https://github.com/avinashvidyarthi/drawIt"
-									target="_blank"
-								>
-									Github Repo </a
-								>&nbsp;
-								<a href="https://draww-it.herokuapp.com/" target="_blank"
-									>See project</a
-								>
-							</p>
-						</div>
-					</div>
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">Remember Number Game</h3>
-							<div class="subheading mb-3">HTML, CSS, JavaScript</div>
-							<p>
-								Remember the sequence of the number and try to put it back in
-								after it gets black.
-								<br />
-								<a
-									href="https://github.com/avinashvidyarthi/remember-number-game"
-									target="_blank"
-								>
-									Github Repo </a
-								>&nbsp;
-								<a
-									href="https://avinashvidyarthi.github.io/remember-number-game/"
-									target="_blank"
-									>See project</a
-								>
-							</p>
-						</div>
-					</div>
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">Fisher's Game</h3>
-							<div class="subheading mb-3">HTML, CSS, JavaScript</div>
-							<p>
-								There are 12 pairs of the fish and you have to find all.
-								<br />
-								<a
-									href="https://github.com/avinashvidyarthi/fishersgame"
-									target="_blank"
-								>
-									Github Repo </a
-								>&nbsp;
-								<a
-									href="https://avinashvidyarthi.github.io/fishersgame/"
-									target="_blank"
-									>See project</a
-								>
-							</p>
-						</div>
-					</div>
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">Agrawal Sanitaion</h3>
-							<div class="subheading mb-3">Mobirise 4</div>
-							<p>
-								This is the official website of Agrawal Sanitaion, Lohardaga
-								<br />
-								<a href="https://agrawalsanitation.in/" target="_blank">
-									Visit Site
-								</a>
-							</p>
-						</div>
-					</div>
-
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">PHOTUA</h3>
-							<div class="subheading mb-3">HTML, jQuery, Firebase</div>
-							<p>
-								This is small social media platform. This lets user sign-in with
-								google and upload their photos.
-								<br />
-
-								<a href="https://photua.web.app" target="_blank">See project</a>
-							</p>
-						</div>
-					</div>
-
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">Optical Character Recognition | OCR</h3>
-							<div class="subheading mb-3">Angular 8, Tesseract.js</div>
-							<p>
-								This portal user camera API to take photos and
-								<a href="https://tesseract.projectnaptha.com/">Tesseract.js</a>
-								to optically read the image.
-								<br />
-
-								<a
-									href="https://avinashvidyarthi.github.io/ocr/"
-									target="_blank"
-									>See project</a
-								>
-							</p>
-						</div>
-					</div>
-
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">QR Code Generator</h3>
-							<div class="subheading mb-3">HTML, PHP, Google Vision API</div>
-							<p>
-								This QR code generator is using Google's Vision API to generate
-								QR codes. It generates different type of QR codes, like: Text,
-								URL, Email, Phone, SMS, Contact, UPI and WIFI.
-								<br />
-								<a
-									href="http://github.com/avinashvidyarthi/qr-code-generator"
-									target="_blank"
-								>
-									Github Repo </a
-								>&nbsp;
-								<a href="http://qr-code.byethost17.com/" target="_blank"
-									>See project</a
-								>
-							</p>
-						</div>
-					</div>
-
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">StopWatch</h3>
-							<div class="subheading mb-3">
-								HTML, CSS, Bootstrap, JavaScript
-							</div>
-							<p>
-								StopWatch created in HTML, CSS, Bootstrap and JavaScript.
-								<br />
-								<a
-									href="http://github.com/avinashvidyarthi/stopwatch"
-									target="_blank"
-								>
-									Github Repo </a
-								>&nbsp;
-								<a
-									href="https://avinashvidyarthi.github.io/stopwatch"
-									target="_blank"
-									>See project</a
-								>
-							</p>
-						</div>
-					</div>
-
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">Jumbled PIN Keypad</h3>
-							<div class="subheading mb-3">HTML, CSS, Bootstrap, jQuery</div>
-							<p>
-								This project is inspired by YONO SBI Lite login interface. The
-								keypad is shuffled as to increase the security.
-								<br />
-								<a
-									href="http://github.com/avinashvidyarthi/jumbled_pin"
-									target="_blank"
-								>
-									Github Repo </a
-								>&nbsp;
-								<a
-									href="https://avinashvidyarthi.github.io/jumbled_pin"
-									target="_blank"
-									>See project</a
-								>
-							</p>
-						</div>
-					</div>
-
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">Matrubhumi Shelter’s Pvt. Ltd.</h3>
-							<div class="subheading mb-3">Mobirise 4</div>
-							<p>
-								This is the official website of Matrubhumi Shelters Pvt. Ltd.
-								<br />
-								<a href="https://matrubhumishelters.com/" target="_blank">
-									Visit Site
-								</a>
-							</p>
-						</div>
-					</div>
-
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">Analog Clock</h3>
-							<div class="subheading mb-3">P5 Js</div>
-							<p>
-								An attractive analog clock developed using p5JS. <br />
-								<a
-									href="https://avinashvidyarthi.github.io/clock/"
-									target="_blank"
-								>
-									See project
-								</a>
-							</p>
-						</div>
-					</div>
-
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">Calculator</h3>
-							<div class="subheading mb-3">HTML, CSS, JavaScript</div>
-							<p>
-								A simple Calculator using HTML, CSS and JavaScript
-								<br />
-								<a
-									href="http://github.com/avinashvidyarthi/calculator"
-									target="_blank"
-								>
-									Github Repo </a
-								>&nbsp;
-								<a
-									href="https://avinashvidyarthi.github.io/calculator"
-									target="_blank"
-									>See project</a
-								>
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<hr class="m-0" />
-
-			<!-- <section
-				class="resume-section p-3 p-lg-5 d-flex align-items-center"
-				id="videos"
-			>
-				<div class="w-100 text-center">
-					<h2 class="mb-5 text-left">Videos</h2>
-					<iframe
-						width="300"
-						height="200"
-						src="https://www.youtube.com/embed/f7cnT90BOmU"
-						frameborder="0"
-						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen
-					></iframe>
-					<iframe
-						width="300"
-						height="200"
-						src="https://www.youtube.com/embed/YibCR89G6uk"
-						frameborder="0"
-						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen
-					></iframe>
-					<iframe
-						width="300"
-						height="200"
-						src="https://www.youtube.com/embed/pV0MRWJExTU"
-						frameborder="0"
-						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen
-					></iframe>
-					<br />
-					<iframe
-						width="300"
-						height="200"
-						src="https://www.youtube.com/embed/qAKnbwQQLBI"
-						frameborder="0"
-						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen
-					></iframe>
-
-					<iframe
-						width="300"
-						height="200"
-						src="https://www.youtube.com/embed/videoseries?list=PLvppTbb-H9V2uwgqexCy14szbF6ZTYW3x"
-						frameborder="0"
-						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen
-					></iframe>
-					<br />
-					<a
-						href="https://www.youtube.com/channel/UCPrh3m-ru5DvhOMkj-KATvA"
-						target="_blank"
-						>Visit Youtube Channel</a
-					>
-				</div>
-			</section>
-
-			<hr class="m-0" /> -->
-
-			<section
-				class="resume-section p-3 p-lg-5 d-flex align-items-center"
-				id="certification"
-			>
-				<div class="w-100">
-					<h2 class="mb-5">Certification</h2>
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">Solutions Architect</h3>
-							<p>
-								AWS Certified Solutions Architect - Associate
-								<br />
-								<br />
-								<a
-									href="https://www.credly.com/badges/53620b2b-a481-4a16-992a-f73a8790c2f1/public_url"
-									target="_blank"
-									>Certificate</a
-								>
-							</p>
-						</div>
-					</div>
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">Cloud Architect</h3>
-							<p>
-								Google Cloud certified Professional Cloud Architect
-								<br />
-								<br />
-								<a
-									href="https://www.credential.net/d10bed3d-4746-4a34-a404-991632029cbe"
-									target="_blank"
-									>Certificate</a
-								>
-							</p>
-						</div>
-					</div>
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">Cloud Engineer</h3>
-							<p>
-								Google Cloud certified Associate Cloud Engineer
-								<br />
-								<br />
-								<a
-									href="https://www.credential.net/8893bbf1-5043-414e-87b6-eb3cd9113d6c"
-									target="_blank"
-									>Certificate</a
-								>
-							</p>
-						</div>
-					</div>
-					<div
-						class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-					>
-						<div class="resume-content">
-							<h3 class="mb-0">NodeJS</h3>
-							<p>
-								FreeCodeCamp certified Back End Development and APIs developer
-								certification
-								<br />
-								<br />
-								<a
-									href="https://www.freecodecamp.org/certification/fcc8b2e08a7-6521-4e9c-9160-47c6dd0163f7/back-end-development-and-apis"
-									target="_blank"
-									>Certificate</a
-								>
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section
-				class="resume-section p-3 p-lg-5 d-flex align-items-center"
-				id="blogs"
-			>
-				<div class="w-100">
-					<h2 class="mb-5">Blogs</h2>
-					<ul class="mb-5">
-						<li>
-							<a
-								target="_blank"
-								href="https://www.cloudthat.com/resources/blog/manage-and-run-applications-as-containers-using-gcp-cloud-run"
-								>Manage and Run Containers using GCP Cloud Run</a
-							>
-						</li>
-						<li>
-							<a
-								target="_blank"
-								href="https://www.cloudthat.com/resources/blog/scheduling-cloud-functions-using-gcp-cloud-scheduler"
-								>Scheduling Cloud Functions using GCP Cloud Scheduler</a
-							>
-						</li>
-						<li>
-							<a
-								target="_blank"
-								href="https://www.cloudthat.com/resources/blog/streamlining-access-control-for-enhanced-security-with-gcp-compute-engine"
-								>Streamlining Access Control for Enhanced Security with GCP
-								Compute Engine</a
-							>
-						</li>
-						<li>
-							<a
-								target="_blank"
-								href="https://www.cloudthat.com/resources/blog/iaac-with-ci-cd-on-gcp-streamlining-infrastructure-deployment-and-management"
-								>IaaC with CI-CD on GCP: Streamlining Infrastructure Deployment
-								and Management</a
-							>
-						</li>
-						<li>
-							<a
-								target="_blank"
-								href="https://www.cloudthat.com/resources/blog/automate-instance-labelling-by-creator-in-gcp-simplify-gce-instance-management"
-								>Automate Instance Labelling by Creator in GCP: Simplify GCE
-								Instance Management</a
-							>
-						</li>
-					</ul>
-					<!-- <a
-						class="btn btn-primary"
-						style="background-color: #bd5d38; border: 1px solid #bd5d38"
-						href="https://www.cloudthat.com/resources/author/avinash-kumar/"
-						target="_blank"
-						>Blog profile</a
-					> -->
-				</div>
-			</section>
-
-			<section
-				class="resume-section p-3 p-lg-5 d-flex align-items-center"
-				id="awards"
-			>
-				<div class="w-100">
-					<h2 class="mb-5">Acheivements &amp; Awards</h2>
-					<ul class="fa-ul mb-0">
-						<li>
-							<i class="fa-li fa fa-trophy text-warning"></i>Awarded "Rookie of
-							the Quarter" for Mar-June 2023 Quarter at CloudThat
-						</li>
-						<li>
-							<i class="fa-li fa fa-trophy text-warning"></i>Trainer at 2-day
-							workshop on web development organized by Odisha Oracle Users Group
-							at GIET University, Gunupur
-						</li>
-						<li>
-							<i class="fa-li fa fa-trophy text-warning"></i>Member of the team
-							which developed and maintained website for annual branch fest of
-							CSE – AVYAKT: 2018
-						</li>
-						<li>
-							<i class="fa-li fa fa-trophy text-warning"></i>Got selected in
-							university’s internal hackathon for Smart India Hackathon – 2020
-						</li>
-					</ul>
-				</div>
-			</section>
-
-			<div>
-				<hr class="m-0" />
-
-				<section
-					class="resume-section p-3 p-lg-5 d-flex align-items-center"
-					id="notification"
-				>
-					<div class="w-100">
-						<div class="row">
-							<div class="col-md-6 my-auto">
-								<!-- <div class="d-none enable-notification mb-5">
-                  <h2 class="mb-5">Notification</h2>
-                  <p>
-                    I usually send out some cool articles. Enable notification
-                    to get notified.
-                  </p>
-                  <button
-                    style="background-color: #bd5d38; border: 1px solid #bd5d38"
-                    class="btn btn-primary"
-                    onclick="enableNotification()"
-                  >
-                    Enable Notification
-                  </button>
-                </div> -->
-								<div class="enabled-notification">
-									<h2 class="mb-5 text-center">You can find me here</h2>
-									<div class="social-icons text-center mb-5">
-										<a
-											href="http://linkedin.com/in/avinashvidyarthi"
-											target="_blank"
-										>
-											<i class="fab fa-linkedin-in"></i>
-										</a>
-										<a
-											href="http://github.com/avinashvidyarthi"
-											target="_blank"
-										>
-											<i class="fab fa-github"></i>
-										</a>
-										<a
-											href="https://www.facebook.com/avinash.vidyarthi"
-											target="_blank"
-										>
-											<i class="fab fa-facebook-f"></i>
-										</a>
-										<a
-											href="https://api.whatsapp.com/send?phone=+917765034079&text=Hello"
-											target="_blank"
-										>
-											<i class="fab fa-whatsapp"></i>
-										</a>
-									</div>
-									<div class="my-2 text-center">
-										<a
-											target="_blank"
-											href="https://calendly.com/avinashvidyarthi/meet-me"
-											style="font-size: large"
-											>Or schedule a meeting!</a
-										>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="jumbotron p-3">
-									<h2 class="text-primary text-center mb-3">Contact Me</h2>
-									<div class="form-group">
-										<label for="name">Name</label>
-										<input
-											type="text"
-											id="name"
-											class="form-control"
-											placeholder="Name"
-										/>
-									</div>
-									<div class="form-group">
-										<label for="subject">Subject</label>
-										<input
-											type="text"
-											id="subject"
-											class="form-control"
-											placeholder="Subject"
-										/>
-									</div>
-									<div class="form-group">
-										<label for="message">Message</label>
-										<textarea
-											class="form-control"
-											id="message"
-											rows="4"
-											placeholder="Type your message here..."
-										></textarea>
-									</div>
-									<div class="form-group">
-										<button
-											style="
-												background-color: #bd5d38;
-												border: 1px solid #bd5d38;
-											"
-											class="btn btn-primary btn-block"
-											onclick="contactMe()"
-										>
-											Send
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
-		</div>
-
-		<!-- Bootstrap core JavaScript -->
-		<script src="vendor/jquery/jquery.min.js"></script>
-		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-		<!-- Plugin JavaScript -->
-		<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-		<!-- Custom scripts for this template -->
-		<script src="js/resume.js"></script>
-	</body>
+    <script src="js/script.js"></script>
+</body>
 </html>

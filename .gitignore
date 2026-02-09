@@ -1,4 +1,28 @@
-functions/
-public/
+# OS Files
+.DS_Store
+Thumbs.db
 
-node_modules
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Node modules (if you add any build tools later)
+node_modules/
+
+# Build outputs (if you add any build process later)
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
